@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mizu — Tu auto, impecable. Sin moverte.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo">
+      <svg class="logo-drop" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 0C11 0 0 11.5 0 18C0 24.075 4.925 28 11 28C17.075 28 22 24.075 22 18C22 11.5 11 0Z" fill="#2563EB"/>
+      </svg>
+      Mizu
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio" class="active">Inicio</a></li>
+      <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#descargar" class="cta-link">Descargar App</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<ul class="mobile-menu" id="mobileMenu">
+  <li><a href="#inicio" onclick="closeMobile()">Inicio</a></li>
+  <li><a href="#sobre-nosotros" onclick="closeMobile()">Sobre Nosotros</a></li>
+  <li><a href="#servicios" onclick="closeMobile()">Servicios</a></li>
+  <li><a href="#faq" onclick="closeMobile()">FAQ</a></li>
+  <li><a href="#descargar" class="cta-link" onclick="closeMobile()">Descargar App</a></li>
+</ul>
+
+<!-- HERO -->
+<section id="inicio">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1><em>Tu auto,</em><br>impecable.<br><em>Sin moverte.</em></h1>
+      <p>Mizu lleva el lavado profesional hasta donde estás. Agenda en segundos, un experto llega a tu puerta y tú sigues con tu día. Así de simple.</p>
+      <div class="hero-btns">
+        <a href="#descargar" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descarga la app
+        </a>
+        <a href="#como-funciona" class="btn-secondary">
+          Cómo funciona
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <div class="img-placeholder wash1">
+        <img src="assets/img/hero.jpg" width="80" height="80"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section id="sobre-nosotros">
+  <div class="section-inner">
+    <div class="sobre-grid">
+      <div class="sobre-left">
+        <div class="section-tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+          Por qué Mizu
+        </div>
+        <h2>El <em>lavado</em> que se adapta a tu <em>vida</em>, no al revés.</h2>
+        <p>Olvida los turnos, las filas y sacar el carro del garaje. Con Mizu tu auto queda reluciente mientras tú trabajas, descansas o pasas tiempo con tu familia.</p>
+        <div class="stats-card">
+          <div class="stats-big">+12k AUTOS LAVADOS</div>
+          <p>Mizu es la aplicación favorita y de confianza de cientos de personas. Únete a ellos y disfruta de la comodidad del lavado a domicilio.</p>
+          <div class="stats-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            98% satisfacción
+          </div>
+          <div class="stats-time">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            ~30 min tiempo promedio
+          </div>
+        </div>
+      </div>
+      <div class="features-list">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="feature-text">
+            <strong>Donde tú estés</strong>
+            <p>En tu casa, oficina o estacionamiento. El lavador llega al lugar que elijas sin costo extra de desplazamiento.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="feature-text">
+            <strong>Profesionales verificados</strong>
+            <p>Los lavadores pasan por verificación de identidad, capacitación y tienen seguro de daños incluido.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <div class="feature-text">
+            <strong>Pago 100% digital</strong>
+            <p>Paga con tarjeta desde la app. Sin efectivo, sin sorpresas. Tu comprobante llega directo a tu correo.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          </div>
+          <div class="feature-text">
+            <strong>Seguimiento en vivo</strong>
+            <p>Mira en tiempo real dónde está el lavador, cuándo llega y el avance del servicio desde la app.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="section-inner">
+    <div class="services-header">
+      <div class="section-tag">Servicios</div>
+      <h2>Lo que <em>hacemos</em> por tu <em>auto</em></h2>
+      <p>Desde un lavado rápido hasta un detailing completo. Elige el servicio que tu auto necesita hoy.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+        </div>
+        <h3>Lavado Estándar</h3>
+        <p>Perfecto para mantener tu auto limpio en el día a día. Rápido, eficiente y sin salir de casa.</p>
+        <ul class="service-features">
+          <li>Lavado exterior completo</li>
+          <li>Limpieza de rines y llantas</li>
+          <li>Aspirado interior</li>
+          <li>Limpieza de vidrios</li>
+        </ul>
+        <div class="service-price">desde <span>$149</span> MXN</div>
+      </div>
+      <div class="service-card featured">
+        <div class="service-badge">Más popular</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>Encerado Premium</h3>
+        <p>Protege y dale brillo de exhibición a la pintura de tu auto.</p>
+        <ul class="service-features">
+          <li>Todo lo del Estándar</li>
+          <li>Cera de carnauba profesional</li>
+          <li>Brillo y protección UV</li>
+          <li>Hidratación de plásticos</li>
+          <li>Perfume de interior</li>
+        </ul>
+        <div class="service-price">desde <span>$349</span> MXN</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Pulido Profesional</h3>
+        <p>Elimina rayaduras superficiales, oxidación y devuelve el brillo original a la pintura de tu vehículo.</p>
+        <ul class="service-features">
+          <li>Corrección de pintura</li>
+          <li>Eliminación de rayaduras leves</li>
+          <li>Descontaminación ferrosa</li>
+          <li>Sellador de pintura</li>
+        </ul>
+        <div class="service-price">desde <span>$499</span> MXN</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como-funciona">
+  <div class="section-inner">
+    <div class="how-grid">
+      <div class="how-left">
+        <div class="section-tag">Proceso</div>
+        <h2><strong>4 pasos.</strong><br>Tu <em>auto</em> queda listo.</h2>
+        <p style="margin-bottom: 40px;">Sin llamadas, sin filas, sin complicaciones. El proceso más simple que hayas visto.</p>
+        <div class="how-img">
+          <div class="img-placeholder wash2">
+            <img src="assets/img/steps.jpg" width="80" height="80"/>
+          </div>
+        </div>
+      </div>
+      <div class="steps-list">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <strong>Abre la app</strong>
+            <p>Descarga Mizu, crea tu cuenta en menos de un minuto y activa tu ubicación.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <strong>Elige tu servicio</strong>
+            <p>Selecciona el tipo de lavado que necesitas y el horario que más te convenga.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <strong>Llega el experto</strong>
+            <p>Un lavador verificado aparece en tu ubicación con todo el equipo necesario.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <strong>¡Listo y brillando!</strong>
+            <p>Califica el servicio, paga desde la app y disfruta tu auto reluciente. Garantía incluida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="faq-grid">
+      <div class="faq-left">
+        <div class="section-tag">FAQ</div>
+        <h2><em>Todo</em> lo que necesitas <em>saber.</em></h2>
+        <p>¿Tienes dudas? Aquí las respuestas más comunes de nuestros usuarios.</p>
+        <div class="faq-img">
+          <div class="img-placeholder wash1">
+            <img src="assets/img/faq.jpg" width="80" height="80"/>
+          </div>
+        </div>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Necesito estar presente durante el lavado?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>No es necesario. Puedes dejar tu auto en el lugar acordado y monitorear el servicio en tiempo real desde la app. Solo asegúrate de tener agua disponible cerca.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Qué pasa si no quedo satisfecho?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Tu satisfacción está garantizada. Si no quedas conforme, un nuevo lavador regresará sin costo adicional para corregir cualquier detalle. Si persiste el problema, emitimos reembolso completo.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Cuánta agua usan por lavado?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Usamos tecnología de lavado de bajo consumo: menos de 15 litros por servicio, hasta 10 veces menos que un autolavado tradicional. Cuidamos tu auto y el planeta.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Qué ciudades están disponibles?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>Actualmente operamos en Ciudad de México, Monterrey, Guadalajara, Puebla y Querétaro. Estamos expandiéndonos rápidamente — ingresa tu ciudad en la app para sumarte a la lista de espera.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            ¿Puedo pagar en efectivo?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><p>No. Por seguridad de nuestros usuarios y lavadores, todos los pagos son 100% digitales a través de la plataforma. Así garantizamos un servicio más rápido y seguro.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / DESCARGAR -->
+<section id="descargar">
+  <div class="section-inner">
+    <div class="cta-grid">
+      <div class="cta-left">
+        <h2>Tu auto te lo va a <em>agradecer.</em></h2>
+        <p>Únete a más de 12,000 usuarios que ya disfrutan de autos impecables sin mover un pie.<br>Descarga gratis y obtén tu primer lavado con 30% de descuento.</p>
+        <div class="store-btns">
+          <a href="#" class="store-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="store-btn-text">
+              <small>Descárgala en</small>
+              <strong>Apple App Store</strong>
+            </div>
+          </a>
+          <a href="#" class="store-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.31.17.68.19 1.01.04l12.1-6.94-2.56-2.56-10.55 9.46zM20.43 10.22L17.2 8.37l-2.88 2.6 2.88 2.6 3.25-1.87a1.43 1.43 0 000-2.48zM1.93.66A1.4 1.4 0 001.5 1.7v20.6c0 .4.15.77.43 1.04l.06.05 11.54-11.53V11.7L1.99.6l-.06.06zM16.31 14.86l-3.28-3.28v-.16l3.28-3.28 2.12 1.21-2.12 5.51z"/></svg>
+            <div class="store-btn-text">
+              <small>Descárgala en</small>
+              <strong>Google Play Store</strong>
+            </div>
+          </a>
+        </div>
+        <div class="ratings">
+          <div class="rating-item">
+            <span class="rating-score">4.9 <span class="stars">★★★★★</span></span>
+            <small>App Store · 2,400+ reseñas</small>
+          </div>
+          <div class="rating-item">
+            <span class="rating-score">4.8 <span class="stars">★★★★★</span></span>
+            <small>Google Play · 3,100+ reseñas</small>
+          </div>
+        </div>
+      </div>
+      <div class="cta-phone">
+        <div class="phone-mock">
+          <div class="phone-notch"></div>
+          <div class="img-placeholder" style="background: linear-gradient(160deg, #1a1a2e 0%, #16213e 40%, #1a2a50 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
+            <img src="assets/img/download-app.jpg" width="80" height="80"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#inicio" class="nav-logo" style="display: inline-flex;">
+          <svg width="20" height="26" viewBox="0 0 22 28" fill="none"><path d="M11 0C11 0 0 11.5 0 18C0 24.075 4.925 28 11 28C17.075 28 22 24.075 22 18C22 11.5 11 0Z" fill="#2563EB"/></svg>
+          <span style="margin-left: 8px; color: white;">Mizu</span>
+        </a>
+        <p>El lavado a domicilio más confiable de México. Tu auto impecable, sin moverte.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Producto</h4>
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#descargar">Descargar app</a>
+        <a href="#">Precios</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#">Blog</a>
+        <a href="#">Prensa</a>
+        <a href="#">Trabaja con nosotros</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Términos de uso</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mizu Technologies S.A. de C.V. Todos los derechos reservados.</span>
+      <div style="display:flex;gap:20px;">
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
